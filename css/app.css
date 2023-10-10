@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #303236;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    background: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 15px; 
+    box-sizing: border-box; 
+}
+
+.component--container input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.component--container {
+    background: #3D3F43;
+    border-radius: 5px;
+    padding: 40px 45px;
+}
+
+.component--container form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.component--container input {
+    padding-left: 53px;
+}
+
+.component--container h6 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.component--container ul {
+    margin-top: 13px;
+    margin-bottom: -7px;
+}
+
+.component--container ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 7px 0;
+}
+
+.component--container ul li a:hover {
+    color: #2CCDEA;
+    font-weight: bold;
+}
+
+.component--container ul li.active a {
+    color: #2CCDEA;
+}
+
+
+/* component-filter-search */
+.component-filter-search {
+    background: #3D3F43;
+    border-radius: 5px;
+}
+
+.component-filter-search form {
+    height: 40px;
+    padding: 14px;
+    display: flex;
+}
+
+.component-filter-search .input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    
+}
+.component-filter-search .search-icon {
+   width: 50px;
+   text-align: center;
+}
+.component-filter-search form input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.component-filter-search form input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+.component-filter-search ul {
+    display: flex;
+    align-items: center;
+}
+.component-filter-search ul li .text {
+    display: block;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.component-filter-search ul li .text:hover {
+    color: #2CCDEA;
+    background-color: #303236;
+}
+
+.component-filter-search ul li label input {
+    display: none;
+}
+
+ label input {
+    display: none;
+}
+ label input:checked + .text {
+    background-color: #303236;
+    color: #2CCDEA;
+}
+ 
+
+/* component-filter */
+
+.component-filter {
+    background: #3D3F43;
+    border-radius: 5px;
+    padding: 40px 45px;
+}
+
+.component-filter form ul li {
+   display: flex;
+   margin-bottom: 20px;
+   align-items: center;
+}
+.component-filter form ul li:last-child {
+    margin-bottom: 0;
+}
+.key {
+    width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.value {
+    flex: 1;
+}
+.value input, select {
+    height: 50px;
+    width: 100%;
+    background: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+}
+.value input, select:focus {
+    outline: 0;
+}
+.value input, select::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.selectbox {
+    position: relative;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url(../image/Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 30px) center;
+}
+.filter-button {
+    margin-top: 40px;
+    border-top: 1px solid #303236;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #31A5D9, #1E96A0);
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 7px 10px 0 rgba(40, 38, 38, .5);
+}
+a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    font-size: 16px;
+}
